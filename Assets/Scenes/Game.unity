@@ -227,6 +227,7 @@ MonoBehaviour:
   _speed: 3.5
   _laserPrefab: {fileID: 3488672645003119121, guid: d3b1d1f8719f040f8af477e251d82b36,
     type: 3}
+  _fireFate: 0.15
 --- !u!1 &618159881
 GameObject:
   m_ObjectHideFlags: 0

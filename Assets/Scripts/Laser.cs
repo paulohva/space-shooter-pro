@@ -6,16 +6,17 @@ public class Laser : MonoBehaviour
 {
     [SerializeField]
     private float _speed = 8f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(_speed * Time.deltaTime * Vector3.up);    
+        // let the laser go to de top
+        transform.Translate(_speed * Time.deltaTime * Vector3.up);
+        
+        //if laser y position greater than 8, destroy it
+        if (transform.position.y > 8)
+        {
+            Destroy(gameObject);
+        }
     }
 }
